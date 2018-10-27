@@ -1,0 +1,7 @@
+- hosts: appserver
+  user: oracle
+  connection: ssh
+  sudo: no
+  gather_facts: no
+  tasks:
+   - script: /home/oracle/Oracle-deployment/create_table.sh > table.log
